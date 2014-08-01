@@ -13,6 +13,22 @@ https://github.com/hybridgroup/cylon
 Install the module with: `npm install cylon-speech`
 
 ## Examples
+```javascript
+var Cylon = require('cylon');
+
+Cylon.robot({
+  // voice for espeak can be specified either in one string or as params for the adaptor.
+  // both connections below will reproduce with the same voice.
+  // connection: { name: 'speech', adaptor: 'speech', language: 'en, gender: 'f', 'voice: '3' },
+  connection: { name: 'speech', adaptor: 'speech', voice: 'en-f3', speed: 130 },
+  device: {name: 'mouth', driver: 'speech'},
+
+  work: function(my) {
+    my.mouth.say("This is awesome!");
+    my.mouth.say("I'm a Cylon.JS robot, and I'm talking!");
+  }
+}).start();    
+```
 
 ## Connecting
 
