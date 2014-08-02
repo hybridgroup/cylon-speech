@@ -1,67 +1,60 @@
 # Cylon.js For Speech
 
-Cylon.js (http://cylonjs.com) is a JavaScript framework for robotics and
-physical computing using Node.js
+Cylon.js (http://cylonjs.com) is a JavaScript framework for robotics and physical computing using Node.js.
 
-This repository contains the Cylon adaptor for text to speech, called cylon-speech.
+This repository contains the Cylon adaptor for text to speech capabilities.
 
-For more information about Cylon, check out the repo at
-https://github.com/hybridgroup/cylon
+For more information about Cylon, check out the repo at https://github.com/hybridgroup/cylon
 
 ## Getting Started
 
-Install the module with: `npm install cylon-speech`
+Install the module via NPM:
 
-After the module has been installed but before you run the example
-make sure `espeak` program is installed and works on your computer, or
-SBC(Single Board Computer), there are packages available for Linux,
-Mac and Windows.
+    $ npm install cylon-speech
+
+After the module is installed, but before you run any scripts using it, ensure the `espeak` utility is installed on your computer.
+
+There are packages available for Linux, OS X, and Windows.
 
 ## How to install espeak
 
-### On Linux
+### Linux
 
-On most modern distros there is already a package for your convenience,
-on distros using Aptitude Package Manager (AKA: apt-get),
-just run:
+On most Linux distros, there should already be a package you can install.
+If you use Aptitude Package Manager (apt-get), just install it with:
 
-```bash
-$ sudo apt-get install espeak
-```
+    $ sudo apt-get install espeak
 
-This is also true for SBCs like the Raspberry-Pi and the Beaglebone Black.
+This is also true for Single-Board Linux Computers like the Raspberry-Pi and the Beaglebone Black.
 
-Once the package has finished installing, try this command to verify everything
-is working as expected:
+Once the package has finished installing, try this command to verify everything is working as expected:
 
-```bash
-$ espeak "This is awesome, Linux the best OS speaking"
-```
+    $ espeak "This is awesome, Linux speaking"
 
-If you can hear the text you passed to the `espeak` command talked back to you then
-you are good to go. Otherwise refer to the speak docs in [espeak.sourceforge.net](http://espeak.sourceforge.net/commands.html)
-for further details and debuggin the instalation.
+If you hear your computer talking to you, everything is working as expected.
+If not, please refer to the [espeak docs]((http://espeak.sourceforge.net/commands.html)) for more help.
 
+### OS X
 
-### On Mac
+Install espeak through Homebrew. For now, we have a custom formula in our repo,
+but in the future we hope to contribute a formula to the main Homebrew library.
 
-Make sure to download and uncompress the approtiate version [here](http://espeak.sourceforge.net/download.html), same as
-with linux after installing make sure it works as expected with:
+    $ brew install https://raw.githubusercontent.com/hybridgroup/cylon-speech/5f32fb3df8fe7031213849f52b14cad5e9846691/lib/espeak.rb
 
-```bash
-$ espeak "This is awesome, Mac OS speaking!"
-```
+After installing, test it out:
+
+    $ espeak "This is awesome, OS X speaking"
 
 ### On Windows
 
-For Windows systems there is a `.exe` file you can download in [espeak.sourceforge.net/download](http://espeak.sourceforge.net/download.html).
+For Windows systems there is a `.exe` file you can download from [SourceForge](http://espeak.sourceforge.net/download.html).
 
 Same as with the above operating systems, make sure it works as advertized when the instalation has completed.
 
-```bash
-$ espeak "This is awesome, Windows OS speaking!"
-```
+    $ espeak "This is awesome, Windows OS speaking!"
+
 ## Examples
+
 ```javascript
 var Cylon = require('cylon');
 
@@ -76,8 +69,9 @@ Cylon.robot({
     my.mouth.say("This is awesome!");
     my.mouth.say("I'm a Cylon.JS robot, and I'm talking!");
   }
-}).start();    
+}).start();
 ```
+
 ## Contributing
 
 In lieu of a formal styleguide, take care to maintain the existing coding style.
