@@ -80,7 +80,7 @@ using `make test` and `make lint`.
 
 ## Release History
 
-None yet...
+Version 0.1.0 - Initial release, cylon speech now working
 
 ## License
 
