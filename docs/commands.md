@@ -1,0 +1,5 @@
+#Commands 
+
+## say(message)
+
+Reproduces the text string passed as audio, text to speech.
