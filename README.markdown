@@ -36,10 +36,9 @@ If not, please refer to the [espeak docs]((http://espeak.sourceforge.net/command
 
 ### OS X
 
-Install espeak through Homebrew. For now, we have a custom formula in our repo,
-but in the future we hope to contribute a formula to the main Homebrew library.
+Install espeak through Homebrew.
 
-    $ brew install https://raw.githubusercontent.com/hybridgroup/cylon-speech/5f32fb3df8fe7031213849f52b14cad5e9846691/lib/espeak.rb
+    $ brew install espeak
 
 After installing, test it out:
 
