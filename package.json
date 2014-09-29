@@ -2,18 +2,18 @@
   "name": "cylon-speech",
   "version": "0.2.0",
   "main": "lib/cylon-speech.js",
-  "description": "Cylon module for Speech",
+  "description": "Cylon module for the eSpeak tool",
   "homepage": "http://cylonjs.com",
-  "bugs": "Your bug report URL here",
+  "bugs": "https://github.com/hybridgroup/cylon-speech/issues",
 
-  "author": "Your Name Here <your@email.here> (your.url.here)",
+  "author": "The Hybrid Group <cylonjs@hybridgroup.com>",
 
   "repository": {
     "type": "git",
-    "url": "your git URL here"
+    "url": "https://github.com/hybridgroup/cylon-speech"
   },
 
-  "license": "your license type here",
+  "license": "Apache 2.0",
 
   "devDependencies": {
     "sinon-chai": "2.5.0",
