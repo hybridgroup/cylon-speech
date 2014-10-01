@@ -79,6 +79,8 @@ using `make test` and `make lint`.
 
 ## Release History
 
+Version 0.3.0 - Compatibility with Cylon 0.19.0
+
 Version 0.2.0 - Updates, compatibility with Cylon 0.18.0
 
 Version 0.1.1 - Updated README, adaptor now creates one process per text to speech message.
