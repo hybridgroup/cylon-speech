@@ -6,6 +6,8 @@ This repository contains the Cylon adaptor for text to speech capabilities.
 
 For more information about Cylon, check out the repo at https://github.com/hybridgroup/cylon
 
+[![Build Status](https://secure.travis-ci.org/hybridgroup/cylon-speech.png?branch=master)](http://travis-ci.org/hybridgroup/cylon-speech) [![Code Climate](https://codeclimate.com/github/hybridgroup/cylon-speech/badges/gpa.svg)](https://codeclimate.com/github/hybridgroup/cylon-speech) [![Test Coverage](https://codeclimate.com/github/hybridgroup/cylon-speech/badges/coverage.svg)](https://codeclimate.com/github/hybridgroup/cylon-speech)
+
 ## Getting Started
 
 Install the module via NPM:
