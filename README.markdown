@@ -81,6 +81,8 @@ using `make test` and `make lint`.
 
 ## Release History
 
+Version 0.4.0 - Compatibility with Cylon 0.20.0
+
 Version 0.3.0 - Compatibility with Cylon 0.19.0
 
 Version 0.2.0 - Updates, compatibility with Cylon 0.18.0
