@@ -4,7 +4,7 @@ var Speech = source("driver");
 
 describe("Cylon.Drivers.Speech", function() {
   var driver = new Speech({
-    adaptor: {}
+    connection: {}
   });
 
   it("needs tests");
