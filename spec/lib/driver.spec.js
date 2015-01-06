@@ -1,4 +1,5 @@
-'use strict';
+// jshint expr:true
+"use strict";
 
 var Speech = source("driver");
 
@@ -7,5 +8,7 @@ describe("Cylon.Drivers.Speech", function() {
     connection: {}
   });
 
-  it("needs tests");
+  it("needs tests", function() {
+    expect(driver).to.be.an.instanceOf(Speech);
+  });
 });
