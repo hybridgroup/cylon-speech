@@ -12,7 +12,7 @@ For more information about Cylon, check out the repo at https://github.com/hybri
 
 Install the module via NPM:
 
-    $ npm install cylon-speech
+    $ npm install cylon cylon-speech
 
 After the module is installed, but before you run any scripts using it, ensure the `espeak` utility is installed on your computer.
 
