@@ -1,6 +1,6 @@
 {
   "name": "cylon-speech",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "main": "lib/cylon-speech.js",
   "description": "Cylon module for the eSpeak tool",
   "homepage": "http://cylonjs.com",
@@ -24,6 +24,6 @@
   },
 
   "dependencies": {
-    "cylon": "~0.22.0"
+    "cylon": "~1.0.0"
   }
 }
