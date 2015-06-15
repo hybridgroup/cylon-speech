@@ -1,10 +1,9 @@
-// jshint expr:true
 "use strict";
 
-var speech = source("cylon-speech");
+var speech = lib("cylon-speech");
 
-var Adaptor = source("adaptor"),
-    Driver = source("driver");
+var Adaptor = lib("adaptor"),
+    Driver = lib("driver");
 
 describe("Cylon.Speech", function() {
   describe("#adaptors", function() {

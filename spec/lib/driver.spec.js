@@ -1,7 +1,6 @@
-// jshint expr:true
 "use strict";
 
-var Speech = source("driver");
+var Speech = lib("driver");
 
 describe("Cylon.Drivers.Speech", function() {
   var driver = new Speech({

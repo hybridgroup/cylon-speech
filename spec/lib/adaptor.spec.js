@@ -1,7 +1,6 @@
-// jshint expr:true
 "use strict";
 
-var Speech = source("adaptor");
+var Speech = lib("adaptor");
 
 describe("Cylon.Adaptors.Speech", function() {
   var adaptor = new Speech();
