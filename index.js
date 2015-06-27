@@ -1,15 +1,7 @@
-/*
- * cylon-speech
- * http://cylonjs.com
- *
- * Copyright (c) 2014 Your Name Here
- * Your License Here
-*/
-
 "use strict";
 
-var Adaptor = require("./adaptor"),
-    Driver = require("./driver");
+var Adaptor = require("./lib/adaptor"),
+    Driver = require("./lib/driver");
 
 module.exports = {
   adaptors: ["speech"],

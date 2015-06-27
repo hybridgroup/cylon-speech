@@ -1,6 +1,6 @@
 "use strict";
 
-var speech = lib("cylon-speech");
+var speech = lib("../");
 
 var Adaptor = lib("adaptor"),
     Driver = lib("driver");
