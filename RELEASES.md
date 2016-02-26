@@ -1,5 +1,7 @@
 ## Release History
 
+Version 0.9.0 - Use driver-based voices like cylon-audio
+
 Version 0.8.0 - Use Cylon 1.1.0
 
 Version 0.7.0 - Compatibility with Cylon 1.0.0
