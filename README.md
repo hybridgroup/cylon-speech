@@ -67,7 +67,6 @@ Cylon.robot({
   },
 
   work: function(my) {
-    my.voice.say("This is awesome!");
     my.voice.say("I'm a Cylon.JS robot, and I'm talking!");
   }
 }).start();

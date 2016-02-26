@@ -7,9 +7,7 @@ Cylon
   .connection("speech", { adaptor: "speech" })
   .device("voice", { driver: "speech", voice: "en-f3", speed: 120 })
   .on("ready", function(bot) {
-    bot.voice.say("This is awesome!", function() {
-      bot.voice.say("I'm a Cylon.JS robot, and I'm talking!");
-    });
+    bot.voice.say("I'm a Cylon.JS robot, and I'm talking!");
   });
 
 Cylon.start();
