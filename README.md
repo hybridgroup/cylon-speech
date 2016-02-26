@@ -2,7 +2,7 @@
 
 Cylon.js (http://cylonjs.com) is a JavaScript framework for robotics and physical computing using Node.js.
 
-This repository contains the Cylon adaptor for text to speech capabilities.
+This module provides an adaptor/driver for text to speech based on eSpeak (https://en.wikipedia.org/wiki/ESpeak).
 
 For more information about Cylon, check out the repo at https://github.com/hybridgroup/cylon
 
@@ -58,22 +58,46 @@ Same as with the above operating systems, make sure it works as advertized when 
 var Cylon = require('cylon');
 
 Cylon.robot({
-  // voice for espeak can be specified either in one string or as params for the adaptor.
-  // both connections below will reproduce with the same voice.
-  // connections: { speech: { adaptor: 'speech', language: 'en, gender: 'f', 'voice: '3' } },
   connections: {
-    speech: { adaptor: 'speech', voice: 'en-f3', speed: 130 }
+    speech: { adaptor: 'speech'}
   },
 
   devices: {
-    mouth: { driver: 'speech' }
+    voice: { driver: 'speech', voice: 'en-f3' }
   },
 
   work: function(my) {
-    my.mouth.say("This is awesome!");
-    my.mouth.say("I'm a Cylon.JS robot, and I'm talking!");
+    my.voice.say("This is awesome!");
+    my.voice.say("I'm a Cylon.JS robot, and I'm talking!");
   }
 }).start();
+```
+
+## Voice Options
+
+You can choose which voice to use for the speech synthesizer, by passing parameters to the driver.
+
+This example uses an "English" dictionary, with a "female" voice register that is the 3rd voice option out of 5, at a speed of 130 words per minute:
+
+```
+devices: {
+  voice: {
+    language: 'en',
+    gender: 'f',
+    voice: '3',
+    speed: 130
+  }
+}
+```
+
+Here is a shorter way to specify the same voice as above:
+
+```
+devices: {
+  voice1: {
+    'voice: 'en-f3', speed: 130
+  }
+}
 ```
 
 ## Documentation
@@ -92,5 +116,4 @@ For the release history, please go to [https://github.com/hybridgroup/cylon-spee
 
 ## License
 
-Copyright (c) 2014 The Hybrid Group. Licensed under the Apache 2.0 license.
-
+Copyright (c) 2014-2016 The Hybrid Group. Licensed under the Apache 2.0 license.
