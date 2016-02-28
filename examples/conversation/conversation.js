@@ -8,8 +8,8 @@ Cylon.robot({
   },
 
   devices: {
-    voice1: { driver: "speech", voice: "en-f3", speed: 130 },
-    voice2: { driver: "speech", voice: "en-m2", speed: 120 }
+    voice1: { driver: "speech", language: "american", gender: "f", speed: 120 },
+    voice2: { driver: "speech", language: "english", gender: "m", speed: 130 }
   },
 
   work: function(my) {

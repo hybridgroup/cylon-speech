@@ -55,15 +55,15 @@ Same as with the above operating systems, make sure it works as advertized when 
 ## How to Use
 
 ```javascript
-var Cylon = require('cylon');
+var Cylon = require("cylon");
 
 Cylon.robot({
   connections: {
-    speech: { adaptor: 'speech'}
+    speech: { adaptor: "speech"}
   },
 
   devices: {
-    voice: { driver: 'speech', voice: 'en-f3' }
+    voice: { driver: "speech", voice: "en+f3" }
   },
 
   work: function(my) {
@@ -76,14 +76,15 @@ Cylon.robot({
 
 You can choose which voice to use for the speech synthesizer, by passing parameters to the driver.
 
-This example uses an "English" dictionary, with a "female" voice register that is the 3rd voice option out of 5, at a speed of 130 words per minute:
+This example uses an "English" dictionary, with a "female" voice register that is the 3rd voice option variant out of 5, at a speed of 130 words per minute:
 
 ```
 devices: {
   voice: {
-    language: 'en',
-    gender: 'f',
-    voice: '3',
+    driver: "speech"
+    language: "english",
+    gender: "f",
+    variant: "3",
     speed: 130
   }
 }
@@ -94,7 +95,7 @@ Here is a shorter way to specify the same voice as above:
 ```
 devices: {
   voice1: {
-    'voice: 'en-f3', speed: 130
+    voice: "en+f3", speed: 130
   }
 }
 ```
