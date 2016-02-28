@@ -4,7 +4,11 @@ var Speech = lib("driver");
 
 describe("Cylon.Drivers.Speech", function() {
   var driver = new Speech({
-    connection: {}
+    connection: {
+      languages: function() {
+        return { english: "en", spanish: "es" };
+      }
+    }
   });
 
   it("needs tests", function() {
