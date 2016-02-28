@@ -1,6 +1,6 @@
 {
   "name": "cylon-speech",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Cylon module for text to speech",
   "homepage": "http://cylonjs.com",
   "bugs": "https://github.com/hybridgroup/cylon-speech/issues",
